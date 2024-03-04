@@ -2,42 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial">
-    <title>Paul Sherrill</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <title>Paul Sherrill Portfolio</title>
 </head>
 <body>
     <header>
         <h1>Paul Sherrill</h1>
         <nav>
             <ul>
-                <li><a href="#about">About Me</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact Me</a></li>
                 <li><a href="#resume">Resume</A></li>
+                <li id="nav-contact"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <h2 class="subtitle">Portfolio</h2>
         <section id="about">
-            <h2>About Me</h2>
-            <p>Insert About Me content</p>
+            <h2 class="about-header">About Me</h2>
+            <p>
+                My name is Paul Sherrill and I am a beginner web developer. I am originally from Austin, Texas but now live in Lubbock and am looking for work here. I graduated from Texas Tech University with a degree in Kinesiology, where I also competed as a student-athlete on the Track and Field team. I am now attending the University of Texas at Austin Full Stack Coding Bootcamp. I am hoping to find a career in web development and am eager to learn more as I continue my education in this field.
+                <img src="assets/profilepic.png" alt="Profile Pic">
+            </p>
         </section>
         <section id="work">
-            <h2>Work</h2>
-            <p>Insert Work content</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-                <ul>
-                    <li><a href=mailto:“pauldsherrill@yahoo.com”></a>Email</li>
-                    <li><a href="5122960676"></a>Phone</li>
-                    <li><a href="https://github.com/pauldsherrill"></a>GitHub</li>
-                    <li><a href="https://www.instagram.com/pauldsherrill/?next=%2F&hl=en"></a>Instagram</li>
-                </ul>
+            <div class="first-row">
+                <h2 class="work-header">Work</h2>
+                <div class="container">
+                    <a href="https://pauldsherrill.github.io/homework-1/"><img src="assets/completedwork.png" alt="Screenshot of Work"></a>
+                    <h3 class="overlay-text" ><a href="https://pauldsherrill.github.io/homework-1/">Refactoring Webpage</a></h3>
+                </div>
+            </div>
+            <div class="placeholder">
+                <img src="assets/placeholder.png" alt="Placeholder Image">
+                <img src="assets/placeholder.png" alt="Placeholder Image">
+                <img src="assets/placeholder.png" alt="PLaceholder Image">
+            </div>
         </section>
         <section id="resume">
-            <h2>Resume</h2>
-            <p>Insert Resume content</p>
+            <h2 class="resume-header">Resume</h2>
+            <div class="container">
+                <a href="https://docs.google.com/document/d/e/2PACX-1vTVHA6VOQg176A6BFBIqxdNxGt0-dEgHF4863-4PM-6l3ukk1h5tGQhChS8q01gqWSl3pbxuFOTs0gh/pub"><img src="assets/resume1.png" alt="Image of Resume"></a>
+                <h3 class="overlay-resume" ><a href="https://docs.google.com/document/d/e/2PACX-1vTVHA6VOQg176A6BFBIqxdNxGt0-dEgHF4863-4PM-6l3ukk1h5tGQhChS8q01gqWSl3pbxuFOTs0gh/pub">Click to See Resume</a></h3>
+            </div>
+        </section>
+        <section id="contact">
+            <h2 class="contact-header">Contact Me</h2>
+                <ul>
+                    <li><a href=mailto:“pauldsherrill@yahoo.com”>pauldsherrill@yahoo.com</a></li>
+                    <li><a href="5122960676">(512)296-0676</a></li>
+                    <li><a href="https://github.com/pauldsherrill">GitHub</a></li>
+                </ul>
         </section>
     </main>
 </body>
+</html>

@@ -1,0 +1,395 @@
+/*Makes every piece of text this specific font*/
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*Removes underline from all hyperlinks*/
+a {
+    text-decoration: none;
+}
+
+/*Gives all images an automatic margin of 50px*/
+img {
+    margin-left: 50px;
+}
+
+header {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(43, 46, 71);
+    border-bottom: double white 5px;
+}
+
+header h1 {
+    text-align: left;
+    padding: 5px 20px 0 40px;
+    background-color: rgb(43, 46, 71);
+}
+
+header a {
+    color: white;
+}
+
+nav ul {
+    background-color: rgb(0, 48, 110);
+    border: solid white 2px;
+    padding: 20px 20px 20px 0;
+}
+
+nav ul li {
+    width: 130px;
+    font-size: 150%;
+    display: inline-block;
+    background-color: rgb(0, 48, 110);
+    border-right: solid white 3px;
+    text-align: center;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+/*Removes border-right from "Contact Me" in the nav bar so that borders only come between the li and on the ends*/
+#nav-contact {
+    border-right: none;
+    padding-right: none;
+}
+
+.subtitle {
+    width: 30%;
+    text-align: right;
+    padding: 20px 30px 20px 40px;
+    background-color:  rgb(0, 48, 110);
+    height: 50%;
+    margin-top: 30px;
+    font-size: 230%;
+    border-bottom: double white 5px;
+    border-top: double white 5px;
+    border-right: double white 5px;
+    color: white;
+}
+
+/*Aligns the headers for each section on the left side of the screen with a border to the right of them*/
+section h2 {
+    color: rgb(43, 46, 71);
+    border-right: solid rgb(43, 46, 71) 5px;
+    text-align: right;
+    font-size: 250%;
+    padding-right: 20px;
+}
+
+/*Adjusts the height of the header border to fit the height of the content in the corresponding section.
+Also adjusts the margins to the left so that each header is aligned with one another*/
+.about-header {
+    height: 335px;
+    margin-left: 105px;
+}
+
+.work-header {
+    height: 450px;
+    margin-left: 120px;
+}
+
+.resume-header {
+    height: 750px;
+    margin-left: 70px;
+}
+
+.contact-header {
+    height: 50px;
+    margin-left: 5px;
+}
+
+/*ABOUT SECTION STYLING*/
+#about {
+    display: flex;
+    flex-direction: row;
+}
+
+#about p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: rgb(0, 48, 110);
+    height: 300px;
+    padding-left: 100px;
+    padding-right: 150px;
+    font-size: 120%;
+    margin-top: 35px;
+}
+
+#about img {
+    border-radius: 30px;
+}
+
+/*WORK SECTION STYLING*/
+/*Applies the border style to all images in the work section*/
+#work img{
+    border: solid rgb(0, 48, 110) 10px;
+    border-radius: 20px;
+}
+
+/*Gives the completed work its own row, keeping it seperate from the placeholders, while keeping it on the same line as the header.*/
+.first-row {
+    display: inline-flex;
+}
+
+.first-row img {
+    width: 140%;
+    height: 200px;
+    margin: 45px 0 0 100px;
+}
+
+/*Positions work content seperate from work header, allows placeholders to be on the same line as each other*/
+#work div {
+    width: 70%;
+    height: 290px;
+    display: flex;
+    flex-direction: row;
+}
+
+#work a {
+    color: white;
+}
+
+.placeholder {
+    margin-left: 305px;
+    width: 100%;
+}
+
+.placeholder img {
+    height: 100px;
+    width: 400px;
+    margin-left: 35px;
+}
+
+/*Next three position text over the completed work image*/
+.container {
+    position: relative;
+}
+
+.overlay-text {
+    height: 70px;
+    width: 400px;
+    position: absolute;
+    padding: 20px 0px 0px 0px;
+    right: 7%;
+    margin-top: 50px;
+    font-size: 200%;
+    background-color: rgb(0, 48, 110);
+    color: white;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/*RESUME SECTION STYLING*/
+#resume {
+    display: flex;
+    flex-direction: row;
+}
+
+#resume img {
+    width: 90%;
+    height: 700px;
+    margin-top: 15px;
+    margin-left: 50px;
+    filter: blur(3px);
+}
+
+#resume a {
+    color: rgb(0, 48, 110);
+}
+
+.overlay-resume {
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    background-color: transparent;
+    font-size: 400%;
+}
+
+/*CONTACT SECTION STYLING*/
+#contact {
+    display: flex;
+    flex-direction: row;
+}
+
+#contact ul {
+    width: 60%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+    margin-left: 50px;
+    margin-top: 40px;
+    list-style-type: none;
+    font-size: 150%;
+}
+
+#contact a {
+    color: rgb(0, 48, 110);
+}
+
+/*To stop the screen from breaking at these screen sizes, here are the new dimensions and positioning*/
+@media screen and (max-width: 1140px) {
+    header {
+        font-size: 60%;
+    }
+    header h1 {
+        padding: 0px 0px 0 20px;
+    }
+    nav ul {
+        padding: 10px 10px 10px 0;
+    }
+    
+    nav ul li {
+        width: 60px;
+    }
+    .subtitle {
+        padding: 10px 30px 10px 40px;
+        margin-top: 10px;
+        font-size: 150%;
+    }
+    section h2 {
+        border-width: 4px;
+        font-size: 150%;
+        padding-right: 10px;
+    }
+    .about-header {
+        height: 335px;
+        margin-left: 62px;
+    }
+    
+    .work-header {
+        height: 250px;
+        margin-left: 70px;;
+    }
+    .resume-header {
+        height: 750px;
+        margin-left: 40px;
+    }
+    .contact-header {
+        height: 100px;
+        margin-left: 0px;
+    }
+    #about p {
+        font-size: 100%;
+        padding-left: 40px;
+        padding-right: 0px;
+        margin-top: 25px;
+    }
+    .first-row img {
+        height: 200px;
+        margin-left: 30px;
+    }
+    .overlay-text {
+        left: 30%;
+        width: 80%;
+        height: 30%;
+        font-size: 150%;
+    }
+    #work div {
+        height: 150px;
+    }
+    .placeholder img{
+        display: none;
+    }
+    #resume {
+
+    }
+    #resume img{
+        width: 80%;
+    }
+    .overlay-resume {
+        font-size: 300%;
+    }
+    #contact ul {
+        margin-left: 30px;
+    }
+    #contact ul li {
+        font-size: 70%
+    }
+}
+
+@media screen and (max-width: 760px) {
+    header {
+        font-size: 50%;
+    }
+    header h1 {
+        padding: 0px 0px 0 15px;
+    }
+    nav ul {
+        padding: 5px 15px 5px 0;
+    }
+    nav ul li {
+        width: 20px;
+        padding-left: 20px;
+        border-right: none;
+    }
+    section h2 {
+        font-size: 90%;
+        padding-right: 8px;
+    }
+    .about-header {
+        height: 210px;
+        margin-left: 35px;
+    }
+    .work-header {
+        height: 200px;
+        margin-left: 40px;;
+    }
+    .resume-header {
+        height: 330px;
+        margin-left: 23px;
+    }
+    .contact-header {
+        height: 50px;
+        margin-left: 0px;
+    }
+    #about p {
+        font-size: 70%;
+        padding-left: 20px;
+        padding-right: 0px;
+        margin-top: 25px;
+        height: 100px;
+    }
+    #about img{
+        margin-left: 10px;
+        width: 100px;;
+        height: 150px;
+    }
+    .first-row img {
+        height: 150px;
+        margin: 25px 0 0 20px;
+    }
+    .overlay-text {
+        left: 30%;
+        width: 80%;
+        font-size: 90%;
+        margin-top: 25px;
+    }
+    #work div {
+        height: 120px;
+    }
+    .placeholder img{
+        display: none;
+    }
+    #resume img{
+        width: 80%;
+        height: 300px;
+    }
+    .overlay-resume {
+        font-size: 150%;
+        top: 35%;
+    }
+    #contact ul {
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+    #contact ul li {
+        font-size: 40%
+    }
+}
